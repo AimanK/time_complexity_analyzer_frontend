@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Time Complexity Analyzer Frontend
 
-## Available Scripts
+Welcome to the Time Complexity Analyzer: Frontend! This application allows users to input code snippets in various modern programming languages and receive an analysis of the worst-case algorithmic time complexity. The results are visually represented on the frontend using line graphs.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Integration](#api-integration)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Input code snippets in various modern programming languages.
+- Analyze the worst-case algorithmic time complexity of the code.
+- Visual representation of the time complexity using line graphs.
+- Responsive and user-friendly UI.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
 
-### `npm run build`
+- **React**: JavaScript library for building user interfaces.
+- **D3.js**: JavaScript library for producing dynamic, interactive data visualizations.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Axios.js**: Promise-based HTTP client for making requests to the backend.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Actix Web**: Powerful, pragmatic, and extremely fast web framework for Rust.
+- **Rust**: Programming language for system-level performance.
+- **ChatGPT API**: For analyzing code snippets and determining their time complexity.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Node.js](https://nodejs.org/) (for running the frontend)
+- [Rust](https://www.rust-lang.org/) (for running the backend)
+- [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) (Rust package manager)
+- [npm](https://www.npmjs.com/get-npm) or [yarn](https://yarnpkg.com/) (JavaScript package manager)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/code-complexity-analyzer.git
+    cd code-complexity-analyzer
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Navigate to the `frontend` directory and install dependencies:
+    ```bash
+    cd frontend
+    npm install
+    # or
+    yarn install
+    ```
 
-## Learn More
+3. Start the React development server:
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+==
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Start both the frontend and backend servers as described in the installation steps.
+2. Open your web browser and navigate to `http://localhost:3000` to access the frontend.
+3. Input your code snippet into the provided text box and click the "Analyze" button.
+4. View the results of the worst-case algorithmic time complexity analysis in graphical form.
 
-### Code Splitting
+## API Integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To analyze the code snippets, the backend communicates with the ChatGPT API. Ensure you have an API key from OpenAI and set it up in your backend configuration.
 
-### Analyzing the Bundle Size
+1. Obtain your API key from [OpenAI](https://beta.openai.com/signup/).
+2. Add your API key to the backend configuration (e.g., as an environment variable).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Example configuration:
 
-### Making a Progressive Web App
+```sh
+export OPENAI_API_KEY='your-api-key'
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+We welcome contributions to improve the Code Complexity Analyzer! To contribute:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a new Pull Request.
 
-### Deployment
+Please ensure your code follows the project's coding standards and includes appropriate tests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
