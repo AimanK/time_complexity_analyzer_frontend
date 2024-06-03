@@ -67,8 +67,6 @@ Welcome to the Time Complexity Analyzer: Frontend! This application allows users
     # or
     yarn start
     ```
-==
-
 ## Usage
 
 1. Start both the frontend and backend servers as described in the installation steps.
