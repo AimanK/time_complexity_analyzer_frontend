@@ -2,7 +2,7 @@
 
 # Time Complexity Analyzer Frontend
 
-Welcome to the Time Complexity Analyzer: Frontend! This application allows users to input code snippets in various modern programming languages and receive an analysis of the worst-case algorithmic time complexity. The results are visually represented on the frontend using line graphs.
+Welcome to the Time Complexity Analyzer Frontend! This application allows users to input code snippets in various modern programming languages and receive an analysis of the worst-case algorithmic time complexity. The results are visually represented on the frontend using line graphs.
 
 ## Table of Contents
 
