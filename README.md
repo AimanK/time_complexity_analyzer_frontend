@@ -55,7 +55,7 @@ Welcome to the Time Complexity Analyzer Frontend! This application allows users 
 
 2. Navigate to the `frontend` directory and install dependencies:
     ```bash
-    cd frontend
+    cd time_complexity_analyzer_frontend
     npm install
     # or
     yarn install
