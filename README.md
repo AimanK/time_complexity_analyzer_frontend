@@ -49,8 +49,8 @@ Welcome to the Time Complexity Analyzer Frontend! This application allows users 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/code-complexity-analyzer.git
-    cd code-complexity-analyzer
+    git clone https://github.com/AimanK/time_complexity_analyzer_frontend.git
+    cd time_complexity_analyzer_frontend
     ```
 
 2. Navigate to the `frontend` directory and install dependencies:
