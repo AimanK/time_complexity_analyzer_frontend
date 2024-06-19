@@ -10,12 +10,12 @@ function App() {
   const [error, setError] = useState(null);
 
   return (
-    <div>
+    <div className="bg-slate-900 shadow-lg from-zinc-700">
       <Header />
           <div>
             <div>
               {/* Code Input Section */}
-              <h1>Time Complexity Analyzer</h1>
+              <h1 className="text-center py-2 text-cyan-200">Time Complexity Analyzer</h1>
               <textarea
                 value={code}
                 onChange={(e) => setCode(e.target.value)}

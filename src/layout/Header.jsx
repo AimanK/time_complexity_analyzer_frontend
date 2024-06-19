@@ -14,7 +14,7 @@ function Header() {
   }, [theme]);
 
   return (
-      <header className="bg-slate-900 shadow-md">
+      <header className="bg-slate-900 shadow-md border border-cyan-200">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
             <nav className="hidden md:flex flex-1 justify-evenly ">
               <a href="#home" className="text-cyan-300 no-underline hover:text-cyan-100 hover:no-underline">Home</a>
