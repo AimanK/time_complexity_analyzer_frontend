@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function Header() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -14,21 +14,24 @@ function Header() {
   }, [theme]);
 
   return (
-    <div>
-      <header>
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">Time Complexities</a>
-          <a href="#">FAQs</a>
-          <a href="#">About</a>
-        </nav>
-        <button
-          onClick={toggleTheme}
-        >
-          Toggle to {theme === 'light' ? 'dark' : 'light'} mode
-        </button>
+      <header className="bg-slate-900 shadow-md">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+            <nav className="hidden md:flex flex-1 justify-evenly ">
+              <a href="#home" className="text-cyan-300 no-underline hover:text-cyan-100 hover:no-underline">Home</a>
+              <a href="#time-complexities" className="text-cyan-500 no-underline hover:text-cyan-200 hover:no-underline">Time Complexities</a>
+              <a href="#faq" className="text-cyan-500 no-underline hover:text-cyan-200 hover:no-underline">FAQs</a>
+              <a href="#about" className="text-cyan-500 no-underline hover:text-cyan-200  hover:no-underline">About</a>
+            </nav>
+            <div className="md:hidden">
+              <button
+                className="text-gray-600 hover:text-gray-800 focus:outline-none" 
+                onClick={toggleTheme}
+              >
+                Toggle to {theme === 'light' ? 'dark' : 'light'} mode
+              </button>
+            </div>
+        </div>
       </header>
-    </div>
   );
 }
 

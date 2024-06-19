@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './layout/Header';
 import ComplexityInfoBox from './layout/ComplexityInfoBox';
 import './App.css';
+import './index.css';
 
 function App() {
   const [code, setCode] = useState('');
@@ -11,8 +12,6 @@ function App() {
   return (
     <div>
       <Header />
-      <div>
-        <div>
           <div>
             <div>
               {/* Code Input Section */}
@@ -27,9 +26,7 @@ function App() {
               {/* Results Section */}
               <ComplexityInfoBox result={result} error={error} />
             </div>
-          </div>
-        </div>
-      </div>
+         </div>
     </div>
   );
 }
