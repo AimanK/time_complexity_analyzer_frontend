@@ -13,10 +13,11 @@ function App() {
     <div className="bg-slate-900 shadow-lg from-zinc-700">
       <Header />
           <div>
-            <div>
+            <div className="h-screen">
               {/* Code Input Section */}
-              <h1 className="text-center py-2 text-cyan-200">Time Complexity Analyzer</h1>
+              <h1 className="font-black text-center py-2 m-3 text-cyan-200">Time Complexity Analyzer</h1>
               <textarea
+                className=""
                 value={code}
                 onChange={(e) => setCode(e.target.value)}
                 placeholder="Enter your code here..."
