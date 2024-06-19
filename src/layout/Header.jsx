@@ -1,21 +1,35 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 
 function Header() {
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
+  };
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
   return (
     <div>
-            <div className="dark container">
-                <header className="d-flex justify-content-center py-3">
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#" className="nav-link active" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="#" className="nav-link">Features</a></li>
-                    <li class="nav-item"><a href="#" className="nav-link">Pricing</a></li>
-                    <li class="nav-item"><a href="#" className="nav-link">FAQs</a></li>
-                    <li class="nav-item"><a href="#" className="nav-link">About</a></li>
-                </ul>
-                </header>
-        </div>
+      <header>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Time Complexities</a>
+          <a href="#">FAQs</a>
+          <a href="#">About</a>
+        </nav>
+        <button
+          onClick={toggleTheme}
+        >
+          Toggle to {theme === 'light' ? 'dark' : 'light'} mode
+        </button>
+      </header>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
