@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="bg-slate-900 shadow-lg from-zinc-700">
       <Header />
-          <div>
-            <div className="h-screen">
+          <div className="h-screen">
+            <div>
               {/* Code Input Section */}
               <h1 className="font-black text-center py-2 m-3 text-cyan-200">Time Complexity Analyzer</h1>
               <textarea
