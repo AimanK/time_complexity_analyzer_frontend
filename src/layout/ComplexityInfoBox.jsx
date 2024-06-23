@@ -5,7 +5,7 @@ import LogLineChart from '../LogLineChart';
 function ComplexityInfoBox( { result, error, data } ) {
 
   return (
-    <div className="flex-1 h-full">
+    <div className="flex-1 h-full mt-16">
       {error && <div>{error}</div>}
       {result && (
         <div>

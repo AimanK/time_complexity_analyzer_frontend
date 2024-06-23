@@ -49,13 +49,13 @@ function App() {
   ];
 
   return (
-    <div className="bg-slate-900 shadow-lg from-zinc-700">
+    <div className="min-h-screen bg-slate-900 shadow-lg from-zinc-700">
       <Header />
         <h1 className="font-black text-center py-2 m-3 text-cyan-200">Time Complexity Analyzer</h1>
           <div className="flex h-full">
             {/* Results Section */}
             <div className="w-1/2 p-4">
-              <ComplexityInfoBox result={result} error={error} data={result === 'O(log n)' ? data : logData} />
+              <ComplexityInfoBox result={result} error={error} data={result === 'O(n)' ? data : logData} />
             </div>
              {/* Code Input Section */}
             <div className="w-1/2 p-4">
