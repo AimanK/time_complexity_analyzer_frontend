@@ -20,8 +20,6 @@ function Header() {
               <a href="#home" className="pr-8 font-serif font-black text-cyan-200 no-underline hover:text-cyan-100 hover:no-underline">Big-O(tter)</a>
               <a href="#home" className="pl-5 font-bold text-cyan-300 no-underline hover:text-cyan-200 hover:no-underline">Home</a>
               <a href="#time-complexities" className="font-bold text-cyan-300 no-underline hover:text-cyan-200 hover:no-underline">Time Complexities</a>
-              <a href="#faq" className="font-bold text-cyan-300 no-underline hover:text-cyan-200 hover:no-underline">FAQs</a>
-              <a href="#about" className="font-bold text-cyan-300 no-underline hover:text-cyan-200  hover:no-underline">About</a>
             </nav>
             <div className="">
               <button
